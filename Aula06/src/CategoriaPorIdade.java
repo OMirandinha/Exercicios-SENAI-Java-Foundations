@@ -6,6 +6,7 @@ public class CategoriaPorIdade {
         Scanner ler = new Scanner(System.in);
         int idade = ler.nextInt();
 
+        //Limpa o buffer do scanner
         ler.nextLine();
 
         if(idade >= 18 && idade < 60){
