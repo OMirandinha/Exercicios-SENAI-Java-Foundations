@@ -59,7 +59,16 @@ public class Estoque {
             quantidadeEmEstoque += quantidade;
     }
 
-    public void valorTotalEmEstoque(){
-        
+    public double valorTotalEmEstoque(){
+        return preco * quantidadeEmEstoque;
+
+    }
+
+    public void mostrarInformacoes(){
+        System.out.println("Produto: " + nome);
+        System.out.println("Código: " + codigo);
+        System.out.println("Preço: R$" + preco);
+        System.out.println("Quantidade em estoque: " + quantidadeEmEstoque);
+        System.out.println("Valor total em estoque: R$" + valorTotalEmEstoque());
     }
 }
